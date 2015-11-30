@@ -1,12 +1,25 @@
 language: php
 
-before_script:
+sudo: required
+
+before_install:
   - sudo apt-get update
   - sudo apt-get install ffmpeg
-  - composer install --dev --prefer-source
+pre_install:
+  - phpenv config-rm xdebug.ini
+install:
+  - composer update --prefer-source
 
 php:
   - 5.3.3
   - 5.3
   - 5.4
   - 5.5
+  - 5.6
+  - 7.0
+
+matrix:
+  allow_failure:
+    - 5.6
+    - 7.0
+  fast_finish: true
