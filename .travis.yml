@@ -12,8 +12,6 @@ install:
   - composer update --prefer-source
 
 php:
-  - 5.3.3
-  - 5.3
   - 5.4
   - 5.5
   - 5.6
