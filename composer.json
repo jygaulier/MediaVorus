@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": "~7.0",
-        "alchemy/phpexiftool"     : "~0.1",
+        "alchemy/phpexiftool"     : "~2.0",
         "doctrine/collections"    : "~1.0",
         "symfony/http-foundation" : "~2.0",
         "php-ffmpeg/php-ffmpeg"   : "~2.0",
